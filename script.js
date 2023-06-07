@@ -1,5 +1,5 @@
 // Load the data
-fetch('nepal.csv')
+fetch('https://raw.githubusercontent.com/pchalise/NepalData/main/nepal.csv')
   .then(response => response.text())
   .then(data => {
     const parsedData = Papa.parse(data, { header: true, dynamicTyping: true });
