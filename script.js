@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch('https://raw.githubusercontent.com/pchalise/NepalData/main/nepal.csv')
     .then(response => response.text())
     .then(data => {
-      const parsedData = Papa.parse(data, { header: true, dynamicTyping: true });
+      const parsedData = Papa.parse(data, { header: true });
       const df = parsedData.data;
 
       const dropdown = document.getElementById('indicator-dropdown');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Clear the canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        const data = df.map(row => row[indicator]);
+        const data = df.map(row => parseFloat(row[indicator]));
         const years = df.map(row => row['Year']);
 
         const chart = new Chart(ctx, {
