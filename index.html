@@ -1,13 +1,24 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>NepalData</title>
-<script src="lib/papaparse.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script.js"></script>
+  <title>Data Visualization Web App</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+  <div class="container">
+    <h1>Data Visualization Web App</h1>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search Indicator...">
+    </div>
+    <div id="dropdown-container">
+      <select id="indicator-dropdown"></select>
+    </div>
+    <div id="chart-container">
+      <canvas id="chart-canvas"></canvas>
+    </div>
+  </div>
+  <script src="lib/papaparse.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#search-container {
+  margin-bottom: 20px;
+}
+
+#chart-container {
+  margin-top: 20px;
+}
