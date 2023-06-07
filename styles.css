@@ -1,11 +1,19 @@
+
 .container {
-  max-width: 800px;
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
   padding: 20px;
+  box-sizing: border-box;
 }
+
 
 h1 {
   text-align: center;
+  color: white;
 }
 
 #search-container {
@@ -13,5 +21,7 @@ h1 {
 }
 
 #chart-container {
+  background-color: white;
+  opacity: 0.8;
   margin-top: 20px;
 }

@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const df = parsedData.data;
 
       const dropdown = document.getElementById('indicator-dropdown');
+      dropdown.style.width = '300px'; // Adjust the width as needed
+
       const searchInput = document.getElementById('search-input');
 
       // Function to update the dropdown options based on the search term
@@ -42,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
       function plotLineGraph(indicator) {
         const canvas = document.getElementById('chart-canvas');
         const ctx = canvas.getContext('2d');
+        canvas.width = 700; // Adjust the width as needed
+        canvas.height = 620; // Adjust the height as needed
 
         // Clear the canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);

@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Data Visualization Web App</title>
+  <title>NepalData</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <canvas></canvas>
+  <script src="illuminated.js"/></script>
+  <script src="particles.js"/></script>
+
+  <link rel = "stylesheet"
+			type = "text/css"
+			href = "bootstrap.css"
+			/>
+
+		<link rel = "stylesheet"
+			type = "text/css"
+			href = "styles.css"
+			/>
 </head>
 <body>
   <div class="container">
-    <h1>Data Visualization Web App</h1>
+    <h1>Nepal Data Visualization 2000-2020</h1>
     <div id="search-container">
       <input type="text" id="search-input" placeholder="Search Indicator...">
     </div>
@@ -20,5 +32,6 @@
   </div>
   <script src="lib/papaparse.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
