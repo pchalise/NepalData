@@ -1,18 +1,18 @@
-
 .container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
   padding: 20px;
-  box-sizing: border-box;
+  background-color: grey;
 }
 
+.chart-container {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 70%;
+  float: left;
+  margin-top: 20px; /* Adjust the spacing between the chart and other elements */
+}
 
 h1 {
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
@@ -20,8 +20,58 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Styling for the chart container */
 #chart-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.chart-container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
   background-color: white;
-  opacity: 0.8;
-  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  margin-bottom: 10px;
+}
+
+#search-input {
+  width: 70%;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dropdown-container {
+  margin-bottom: 10px;
+}
+
+#indicator-dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.chart-container {
+  text-align: center;
+}
+
+#chart-canvas {
+  max-width: 100%;
+  height: auto;
 }

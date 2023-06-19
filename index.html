@@ -3,35 +3,23 @@
 <head>
   <title>NepalData</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <canvas></canvas>
-  <script src="illuminated.js"/></script>
-  <script src="particles.js"/></script>
-
-  <link rel = "stylesheet"
-			type = "text/css"
-			href = "bootstrap.css"
-			/>
-
-		<link rel = "stylesheet"
-			type = "text/css"
-			href = "styles.css"
-			/>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Nepal Data Visualization 2000-2020</h1>
-    <div id="search-container">
+    <h1 class="title">Nepal Data Visualization 2000-2020</h1>
+    <div class="search-container">
       <input type="text" id="search-input" placeholder="Search Indicator...">
     </div>
-    <div id="dropdown-container">
+    <div class="dropdown-container">
       <select id="indicator-dropdown"></select>
     </div>
-    <div id="chart-container">
-      <canvas id="chart-canvas"></canvas>
+    <div class="chart-container">
+      <canvas id="chart-canvas" height="570"></canvas>
     </div>
   </div>
-  <script src="lib/papaparse.min.js"></script>
-  <script src="script.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </body>
 </html>
