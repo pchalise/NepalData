@@ -16,18 +16,6 @@ h1 {
   color: white;
 }
 
-#search-container {
-  margin-bottom: 20px;
-}
-
-/* Styling for the chart container */
-#chart-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
 .chart-container {
   max-width: 70%;
   margin: 0 auto;
@@ -65,13 +53,4 @@ h1 {
   font-size: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-
-.chart-container {
-  text-align: center;
-}
-
-#chart-canvas {
-  max-width: 100%;
-  height: auto;
 }
