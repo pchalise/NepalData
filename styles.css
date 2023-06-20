@@ -8,8 +8,30 @@
   box-sizing: border-box;
   width: 70%;
   float: left;
-  margin-top: 20px; /* Adjust the spacing between the chart and other elements */
+  margin-top: 20px;
 }
+
+.text{
+  font-size: 12px;
+  box-sizing: border-box;
+  width: 70%;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+a{
+  color: hotpink;
+}
+
+a:hover {
+  color: grey;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 
 h1 {
   text-align: left;
